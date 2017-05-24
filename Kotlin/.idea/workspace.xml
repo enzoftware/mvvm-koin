@@ -13,11 +13,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Strings.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Strings.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Strings.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
               <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <folding>
+                <element signature="n#!!doc;n#main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrays-OD.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/arrays-OD.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
               <folding>
                 <element signature="n#!!doc;n#main#0" expanded="false" />
               </folding>
@@ -46,6 +58,7 @@
         <option value="$PROJECT_DIR$/src/HelloWorld.kt" />
         <option value="$PROJECT_DIR$/src/Loops.kt" />
         <option value="$PROJECT_DIR$/src/Strings.kt" />
+        <option value="$PROJECT_DIR$/src/arrays-OD.kt" />
       </list>
     </option>
   </component>
@@ -126,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.StringsKt">
+  <component name="RunManager" selected="Kotlin.Arrays_ODKt">
     <configuration default="false" name="HelloWorldKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="HelloWorldKt" />
@@ -169,6 +182,19 @@
     <configuration default="false" name="StringsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="StringsKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Kotlin" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Arrays_ODKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Arrays_ODKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -639,18 +665,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Kotlin.HelloWorldKt" />
       <item index="1" class="java.lang.String" itemvalue="Kotlin.FindMyAgeKt" />
       <item index="2" class="java.lang.String" itemvalue="Kotlin.LoopsKt" />
       <item index="3" class="java.lang.String" itemvalue="Kotlin.StringsKt" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.Arrays_ODKt" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.StringsKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.LoopsKt" />
-        <item index="2" class="java.lang.String" itemvalue="Kotlin.HelloWorldKt" />
-        <item index="3" class="java.lang.String" itemvalue="Kotlin.FindMyAgeKt" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.Arrays_ODKt" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.StringsKt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.LoopsKt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.HelloWorldKt" />
+        <item index="4" class="java.lang.String" itemvalue="Kotlin.FindMyAgeKt" />
       </list>
     </recent_temporary>
   </component>
@@ -671,12 +699,12 @@
       <updated>1495588120293</updated>
       <workItem from="1495588128257" duration="299000" />
       <workItem from="1495588474586" duration="3281000" />
-      <workItem from="1495602505956" duration="4673000" />
+      <workItem from="1495602505956" duration="6579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8253000" />
+    <option name="totallyTimeSpent" value="10159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1854" y="52" width="926" height="1027" extended-state="4" />
@@ -691,7 +719,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -785,6 +813,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc;n#main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/arrays-OD.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
           <folding>
             <element signature="n#!!doc;n#main#0" expanded="false" />
           </folding>
