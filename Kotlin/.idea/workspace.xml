@@ -16,8 +16,8 @@
       <file leaf-file-name="HelloWorld.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+            <state relative-caret-position="551">
+              <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc;n#main#0" expanded="false" />
               </folding>
@@ -53,7 +53,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
+    <option name="x" value="-1854" />
     <option name="y" value="52" />
     <option name="width" value="926" />
     <option name="height" value="1027" />
@@ -623,15 +623,15 @@
       <updated>1495588120293</updated>
       <workItem from="1495588128257" duration="299000" />
       <workItem from="1495588474586" duration="3281000" />
-      <workItem from="1495602505956" duration="339000" />
+      <workItem from="1495602505956" duration="1022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3919000" />
+    <option name="totallyTimeSpent" value="4602000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="52" width="926" height="1027" extended-state="4" />
+    <frame x="-1854" y="52" width="926" height="1027" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -702,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+        <state relative-caret-position="551">
+          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc;n#main#0" expanded="false" />
           </folding>

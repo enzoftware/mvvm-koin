@@ -22,5 +22,15 @@ fun main(args:Array<String>){
                                         // '!!' => PARA NON-NULL STR
     println("Y tienes $money")
 
+    //      CONVERT BETWEEN DATA TYPES
 
+    var n1:Int = 10
+    var n2:Int?
+    var n2Str:String = "12"
+    n2 = n2Str.toInt()
+    println("$n1 y $n2")
+
+    //.................MATH OPERATIONS ..........................
+
+    
 }
