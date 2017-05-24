@@ -24,13 +24,24 @@ fun main(args:Array<String>){
 
     //      CONVERT BETWEEN DATA TYPES
 
-    var n1:Int = 10
+    var n1:Int = 20
     var n2:Int?
     var n2Str:String = "12"
     n2 = n2Str.toInt()
     println("$n1 y $n2")
 
-    //.................MATH OPERATIONS ..........................
+    //.................LOGIC STATEMENTS ..........................
+    if(n1 < 15){
+        print("n1 is less than 15")
+    }else if(n1 >15 || n1 < 25){
+        print("xdxdxdxd")
+    }else{
+        print("c mamut")
+    }
+
+
+    //  when statement
 
     
+
 }
