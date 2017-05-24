@@ -1,3 +1,6 @@
+import com.sun.org.apache.xpath.internal.operations.Bool
+import org.omg.CORBA.INTF_REPOS
+
 /**
  * Created by enzoftware on 5/23/17.
  */
@@ -34,7 +37,7 @@ fun main(args:Array<String>){
     if(n1 < 15){
         print("n1 is less than 15")
     }else if(n1 >15 || n1 < 25){
-        print("xdxdxdxd")
+        println("xdxdxdxd")
     }else{
         print("c mamut")
     }
@@ -42,6 +45,29 @@ fun main(args:Array<String>){
 
     //  when statement
 
-    
+    var valiu:Int = 10
+
+    when(valiu){
+        1,2 -> print("is a") //MULTIPLE CHOISE VALUE SWITCHING
+        !in 30..50-> print("is c")  // OUT OF THAT RANGE
+        in 2..10 -> print("is b") // IN THAT RANGE
+        else->{
+            println("is unexpected") // IF ANYONE CASE IS TRUE
+        }
+    }
+
+    //ALWAYS GET THE FIRST CONDITION THE RETURN TRUE
+
+    var x1:Int = 15
+    var x2:Int = 156
+    var max:Int = if(x1>x2) x1 else x2
+    println("max is $max")
+
+
+    var yiars:Int = 15
+    var isYoung = when(yiars){
+        65->true
+        else->false
+    }
 
 }
