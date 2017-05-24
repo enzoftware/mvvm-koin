@@ -3,9 +3,16 @@
  */
 
 fun main(args:Array<String>){
-    var x:Int = 18
+    var age:Int = 18
     var name:String = "enzoftware" // DEFINE A DATA TYPE FOR THE VARIABLE
-    var variable:String? // THAT CAN BE NULL
-    var pi:Double = 3.14159 // DOUBLE DATA TYPE
-    print("Hello $name you have $x years")
+    var carrer:String? // THAT CAN BE NULL
+    carrer= "Software Engineering"
+    val pi:Double = 3.14159 // DOUBLE DATA TYPE
+    print("Hello $name you have $age years and you study $carrer")
+
+    //------------------------    VAR vs VAL      -------------------------------
+
+    val secondName:String = "Lizama" //ITS NOT MUTABLE ( NEVER CHANGE )
+
+    
 }
