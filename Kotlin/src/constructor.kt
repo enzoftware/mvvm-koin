@@ -1,12 +1,5 @@
 import javax.print.DocFlavor
 
-/**
- * Created by enzoftware on 5/31/17.
- */
-/**
- * Created by enzoftware on 5/26/17.
- */
-
 class CarCons(){ //THIS A CONSTRUCTOR
     var Type:String?=null
     var Model:Int?=null
@@ -31,11 +24,3 @@ class CarCons(){ //THIS A CONSTRUCTOR
         return this.Type
     }
 }
-
-fun main(args: Array<String>) {
-    var myCar = CarCons("BMW",2017,1515.3,100,"Enzo Lizama")
-    var yourCar = CarCons("Audi",2016,125515.3,10000,"Enzoftware")
-    print(myCar.GetType())
-}
-
-
