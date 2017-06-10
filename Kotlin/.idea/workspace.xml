@@ -28,10 +28,10 @@
       <file leaf-file-name="fileReader.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fileReader.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="227">
+              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding>
-                <element signature="n#!!doc;n#main#0" expanded="false" />
+                <element signature="n#!!doc;n#ReadFile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -170,20 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.FileWriterKt">
-    <configuration default="false" name="CallPackageKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="CallPackageKt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Kotlin" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.FileReaderKt">
     <configuration default="false" name="NestedClassKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="NestedClassKt" />
@@ -226,6 +213,19 @@
     <configuration default="false" name="FileWriterKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="FileWriterKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Kotlin" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FileReaderKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="FileReaderKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -697,19 +697,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Kotlin.CallPackageKt" />
-      <item index="1" class="java.lang.String" itemvalue="Kotlin.NestedClassKt" />
-      <item index="2" class="java.lang.String" itemvalue="Kotlin.SingletonKt" />
-      <item index="3" class="java.lang.String" itemvalue="Kotlin.Try_catchKt" />
-      <item index="4" class="java.lang.String" itemvalue="Kotlin.FileWriterKt" />
+      <item index="0" class="java.lang.String" itemvalue="Kotlin.NestedClassKt" />
+      <item index="1" class="java.lang.String" itemvalue="Kotlin.SingletonKt" />
+      <item index="2" class="java.lang.String" itemvalue="Kotlin.Try_catchKt" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.FileWriterKt" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.FileReaderKt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.FileWriterKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.Try_catchKt" />
-        <item index="2" class="java.lang.String" itemvalue="Kotlin.SingletonKt" />
-        <item index="3" class="java.lang.String" itemvalue="Kotlin.NestedClassKt" />
-        <item index="4" class="java.lang.String" itemvalue="Kotlin.CallPackageKt" />
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.FileReaderKt" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.FileWriterKt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.Try_catchKt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.SingletonKt" />
+        <item index="4" class="java.lang.String" itemvalue="Kotlin.NestedClassKt" />
       </list>
     </recent_temporary>
   </component>
@@ -747,12 +747,12 @@
       <workItem from="1496793257825" duration="1710000" />
       <workItem from="1497063315394" duration="83000" />
       <workItem from="1497073927223" duration="253000" />
-      <workItem from="1497074209587" duration="2523000" />
+      <workItem from="1497074209587" duration="3443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34551000" />
+    <option name="totallyTimeSpent" value="35471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="52" width="648" height="715" extended-state="4" />
@@ -773,7 +773,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30730897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29900333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1132,10 +1132,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fileReader.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="227">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding>
-            <element signature="n#!!doc;n#main#0" expanded="false" />
+            <element signature="n#!!doc;n#ReadFile#0" expanded="false" />
           </folding>
         </state>
       </provider>
