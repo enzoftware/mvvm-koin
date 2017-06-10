@@ -22,5 +22,5 @@ fun ReadFile(){
 
 fun main(args: Array<String>) {
     ReadFile()
-    
+
 }
