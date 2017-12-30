@@ -4,12 +4,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.androidnetworking.AndroidNetworking
-import com.androidnetworking.common.ANRequest
 import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
-import com.androidnetworking.interfaces.JSONArrayRequestListener
-import kotlinx.android.synthetic.main.activity_main.*
-import org.json.JSONArray
+import com.androidnetworking.interfaces.ParsedRequestListener
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,18 +17,35 @@ class MainActivity : AppCompatActivity() {
         AndroidNetworking.initialize(applicationContext)
         AndroidNetworking .get("https://api.coinmarketcap.com/v1/ticker/")
                 .setPriority(Priority.LOW)
+                .addQueryParameter("limit","10")
                 .build()
-                .getAsJSONArray(object : JSONArrayRequestListener{
-                    override fun onResponse(response: JSONArray?) {
-                        hw.text = response.toString()
+                .getAsObjectList(CryptoCoin::class.java , object : ParsedRequestListener<List<CryptoCoin>>{
+                    override fun onResponse(response: List<CryptoCoin>?) {
+                        if (response != null) {
+                            for (item in response) {
+                                Log.i("success", item.id)
+                                Log.i("success", item.name)
+                                Log.i("success", item.symbol)
+                                Log.i("success", item.price_usd)
+                                Log.i("success", item.price_btc)
+                                Log.i("success", item.rank)
+                            }
+                        }
+
+                        printCryptoCoins(response)
                     }
 
                     override fun onError(anError: ANError?) {
-                        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                        Log.e("errorcillo",anError.toString())
                     }
 
                 })
     }
+
+}
+
+fun printCryptoCoins(List<CryptoCoin>?){
+
 }
 
 
