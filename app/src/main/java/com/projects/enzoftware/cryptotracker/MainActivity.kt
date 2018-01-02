@@ -30,9 +30,8 @@ class MainActivity : AppCompatActivity() {
                                 Log.i("success", item.price_btc)
                                 Log.i("success", item.rank)
                             }
+                            printCryptoCoins(response)
                         }
-
-                        printCryptoCoins(response)
                     }
 
                     override fun onError(anError: ANError?) {
@@ -44,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-fun printCryptoCoins(List<CryptoCoin>?){
+fun printCryptoCoins(list : List<CryptoCoin>?){
 
 }
 
