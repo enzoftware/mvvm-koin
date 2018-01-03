@@ -1,7 +1,7 @@
-package com.projects.enzoftware.cryptotracker
+package com.projects.enzoftware.cryptotracker.ui.ui.activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
@@ -9,8 +9,9 @@ import com.androidnetworking.AndroidNetworking
 import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.ParsedRequestListener
-import com.projects.enzoftware.cryptotracker.adapter.CryptoCoinAdapter
-
+import com.projects.enzoftware.cryptotracker.R
+import com.projects.enzoftware.cryptotracker.model.CryptoCoin
+import com.projects.enzoftware.cryptotracker.ui.ui.CryptoCoinAdapter
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     override fun onError(anError: ANError?) {
-                        Log.e("errorcillo",anError.toString())
+                        Log.e("something fails :(",anError.toString())
                     }
 
                 })

@@ -1,4 +1,4 @@
-package com.projects.enzoftware.cryptotracker
+package com.projects.enzoftware.cryptotracker.model
 
 /**
  * Created by enzoftware on 12/30/17.
