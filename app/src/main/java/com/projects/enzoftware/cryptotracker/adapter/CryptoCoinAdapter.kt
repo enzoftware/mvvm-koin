@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.projects.enzoftware.cryptotracker.CryptoCoin
 import com.projects.enzoftware.cryptotracker.R
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cardiew_coin_detail.view.*
 
 /**
@@ -30,9 +31,9 @@ import kotlinx.android.synthetic.main.cardiew_coin_detail.view.*
 
     class Item(itemView:View) : RecyclerView.ViewHolder(itemView){
         fun bindData(_list : CryptoCoin , context: Context){
-            itemView.coinId.text = _list.id
+            itemView.coinId.text = _list.symbol
             itemView.coinName.text = _list.name
-
+            Picasso.with(context).load("https://raw.githubusercontent.com/cjdowner/cryptocurrency-icons/master/32/color/bnb.png").into(itemView.coinImage)
         }
     }
 
