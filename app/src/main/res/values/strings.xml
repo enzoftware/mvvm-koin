@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CryptoTracker</string>
+    <string name="coinName">Coin name</string>
+    <string name="coinID">coinID</string>
 </resources>

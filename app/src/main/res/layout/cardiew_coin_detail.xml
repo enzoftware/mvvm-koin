@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardCornerRadius="10dp"
+android:layout_margin="10dp"
+android:layout_height="150dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/coinName"
+            android:layout_width="122dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/coinName"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/space"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/coinImage"
+            android:layout_width="52dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/coinId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btc" />
+
+        <TextView
+            android:id="@+id/coinId"
+            android:layout_width="53dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/coinID"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/space"
+            app:layout_constraintStart_toEndOf="@+id/coinImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="13dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/coinId"
+            app:layout_constraintEnd_toStartOf="@+id/coinName"
+            app:layout_constraintStart_toEndOf="@+id/coinId"
+            app:layout_constraintTop_toTopOf="@+id/coinId" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

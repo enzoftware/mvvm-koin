@@ -2,11 +2,14 @@ package com.projects.enzoftware.cryptotracker
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.util.Log
 import com.androidnetworking.AndroidNetworking
 import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.ParsedRequestListener
+import com.projects.enzoftware.cryptotracker.adapter.CryptoCoinAdapter
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,10 +44,14 @@ class MainActivity : AppCompatActivity() {
                 })
     }
 
+
+    fun printCryptoCoins(list : List<CryptoCoin>?){
+        val recycler = findViewById<RecyclerView>(R.id.recyclerViewCoins)
+        recycler.layoutManager = LinearLayoutManager(this)
+        recycler.hasFixedSize()
+        recycler.adapter = CryptoCoinAdapter(this,list)
+    }
 }
 
-fun printCryptoCoins(list : List<CryptoCoin>?){
-
-}
 
 
