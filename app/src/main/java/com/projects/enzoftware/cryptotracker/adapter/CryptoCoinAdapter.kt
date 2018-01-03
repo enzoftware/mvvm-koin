@@ -33,7 +33,7 @@ import kotlinx.android.synthetic.main.cardiew_coin_detail.view.*
         fun bindData(_list : CryptoCoin , context: Context){
             itemView.coinId.text = _list.symbol
             itemView.coinName.text = _list.name
-            Picasso.with(context).load("https://raw.githubusercontent.com/cjdowner/cryptocurrency-icons/master/32/color/bnb.png").into(itemView.coinImage)
+            Picasso.with(context).load(_list.url).into(itemView.coinImage)
         }
     }
 

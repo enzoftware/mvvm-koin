@@ -12,6 +12,7 @@ import com.androidnetworking.interfaces.ParsedRequestListener
 import com.projects.enzoftware.cryptotracker.adapter.CryptoCoinAdapter
 
 
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         AndroidNetworking.initialize(applicationContext)
         AndroidNetworking .get("https://api.coinmarketcap.com/v1/ticker/")
                 .setPriority(Priority.LOW)
-                .addQueryParameter("limit","10")
+                .addQueryParameter("limit","50")
                 .build()
                 .getAsObjectList(CryptoCoin::class.java , object : ParsedRequestListener<List<CryptoCoin>>{
                     override fun onResponse(response: List<CryptoCoin>?) {
@@ -32,6 +33,8 @@ class MainActivity : AppCompatActivity() {
                                 Log.i("success", item.price_usd)
                                 Log.i("success", item.price_btc)
                                 Log.i("success", item.rank)
+                                item.url = "https://raw.githubusercontent.com/cjdowner/cryptocurrency-icons/master/32/color/" + item.symbol.toLowerCase() + ".png"
+                                Log.i("success", item.url)
                             }
                             printCryptoCoins(response)
                         }
