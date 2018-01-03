@@ -17,8 +17,6 @@ import com.projects.enzoftware.cryptotracker.ui.ui.CryptoCoinAdapter
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         AndroidNetworking.initialize(applicationContext)
         AndroidNetworking .get("https://api.coinmarketcap.com/v1/ticker/")
                 .setPriority(Priority.LOW)
@@ -34,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                                 Log.i("success", item.price_usd)
                                 Log.i("success", item.price_btc)
                                 Log.i("success", item.rank)
+                                Log.i("success", item.percent_change_24h.toString())
                                 item.url = "https://raw.githubusercontent.com/cjdowner/cryptocurrency-icons/master/32/color/" + item.symbol.toLowerCase() + ".png"
                                 Log.i("success", item.url)
                             }
@@ -46,6 +45,9 @@ class MainActivity : AppCompatActivity() {
                     }
 
                 })
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
     }
 
 

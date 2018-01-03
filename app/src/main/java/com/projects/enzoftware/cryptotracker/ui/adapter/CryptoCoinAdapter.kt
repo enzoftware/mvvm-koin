@@ -33,6 +33,7 @@ import kotlinx.android.synthetic.main.cardiew_coin_detail.view.*
         fun bindData(_list : CryptoCoin, context: Context){
             itemView.coinId.text = _list.symbol
             itemView.coinName.text = _list.name
+            itemView.textViewRank.text = _list.rank
             Picasso.with(context).load(_list.url).into(itemView.coinImage)
         }
     }
