@@ -11,7 +11,7 @@ import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.ParsedRequestListener
 import com.projects.enzoftware.cryptotracker.R
 import com.projects.enzoftware.cryptotracker.model.CryptoCoin
-import com.projects.enzoftware.cryptotracker.ui.ui.CryptoCoinAdapter
+import com.projects.enzoftware.cryptotracker.ui.adapter.CryptoCoinAdapter
 
 
 class MainActivity : AppCompatActivity() {

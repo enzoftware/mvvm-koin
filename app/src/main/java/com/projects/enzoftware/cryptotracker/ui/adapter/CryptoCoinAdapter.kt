@@ -1,4 +1,4 @@
-package com.projects.enzoftware.cryptotracker.ui.ui
+package com.projects.enzoftware.cryptotracker.ui.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
