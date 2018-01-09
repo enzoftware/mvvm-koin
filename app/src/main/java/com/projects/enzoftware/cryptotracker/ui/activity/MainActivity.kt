@@ -1,4 +1,4 @@
-package com.projects.enzoftware.cryptotracker.ui.ui.activity
+package com.projects.enzoftware.cryptotracker.ui.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
