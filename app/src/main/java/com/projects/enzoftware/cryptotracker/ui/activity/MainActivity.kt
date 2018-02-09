@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidNetworking.initialize(applicationContext)
-        AndroidNetworking .get("https://api.coinmarketcap.com/v1/ticker/")
+        AndroidNetworking.get("https://api.coinmarketcap.com/v1/ticker/")
                 .setPriority(Priority.LOW)
                 .addQueryParameter("limit","50")
                 .build()
@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
     }
-
 
     fun printCryptoCoins(list : List<CryptoCoin>?){
         val recycler = findViewById<RecyclerView>(R.id.recyclerViewCoins)
