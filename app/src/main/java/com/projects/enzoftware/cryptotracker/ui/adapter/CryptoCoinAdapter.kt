@@ -1,6 +1,7 @@
 package com.projects.enzoftware.cryptotracker.ui.adapter
 
 import android.content.Context
+import android.graphics.Color
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import com.projects.enzoftware.cryptotracker.R
 import com.projects.enzoftware.cryptotracker.model.CryptoCoin
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cardiew_coin_detail.view.*
+import org.jetbrains.anko.textColor
+
 
 /**
  * Created by enzoftware on 1/1/18.
@@ -33,7 +36,22 @@ import kotlinx.android.synthetic.main.cardiew_coin_detail.view.*
         fun bindData(_list : CryptoCoin, context: Context){
             itemView.coinId.text = _list.symbol
             itemView.coinName.text = _list.name
-            itemView.textViewRank.text = _list.rank
+            itemView.textViewRank.text = _list.price_usd
+            itemView.change24h.text =_list.percent_change_24h.toString()
+            itemView.change7d.text = _list.percent_change_7d.toString()
+
+            /**  IN JAVA WAY **/
+
+            if (_list.percent_change_24h > 0){
+                itemView.change24h.setTextColor(Color.parseColor("#00BF9A")) //00BF9A ==> MATERIAL GREEN
+            }else{
+                itemView.change24h.setTextColor(Color.parseColor("#F44336")) // F44336 ==> MATERIAL RED
+            }
+
+            /** IN KOTLIN WAY **/
+
+            itemView.change7d.textColor =  if (_list.percent_change_7d > 0 ) Color.parseColor("#ABC123") else Color.parseColor("#123ABC")
+
             Picasso.with(context).load(_list.url).into(itemView.coinImage)
         }
     }

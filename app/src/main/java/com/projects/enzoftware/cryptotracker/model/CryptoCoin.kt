@@ -11,4 +11,5 @@ data class CryptoCoin ( var id : String,
                         var price_btc : String,
                         var rank : String,
                         var url : String = "url",
-                        var percent_change_24h : Double)
+                        var percent_change_24h : Double,
+                        var percent_change_7d : Double)

@@ -3,4 +3,8 @@
     <string name="coinName">Coin name</string>
     <string name="coinID">coinID</string>
     <string name="contentDescriptionCryptoCoin">Cryptocurrency image</string>
+    <string name="lorem">TextView</string>
+    <string name="dolar_symbol">$</string>
+    <string name="changeHours">24h: </string>
+    <string name="changeWeek">7d:</string>
 </resources>

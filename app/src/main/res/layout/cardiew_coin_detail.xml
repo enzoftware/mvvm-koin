@@ -16,24 +16,13 @@ android:layout_height="150dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewRank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="28dp"
-                android:text="10"
-                android:textSize="20sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
 
             <ImageView
                 android:id="@+id/coinImage"
                 android:layout_width="52dp"
-                android:layout_height="57dp"
+                android:layout_height="52dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="16dp"
@@ -46,7 +35,7 @@ android:layout_height="150dp">
 
             <TextView
                 android:id="@+id/coinId"
-                android:layout_width="53dp"
+                android:layout_width="wrap_content"
                 android:layout_height="29dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="16dp"
@@ -55,24 +44,38 @@ android:layout_height="150dp">
                 android:text="@string/coinID"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-                app:layout_constraintEnd_toStartOf="@+id/space"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/coinImage"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/coinName"
-                android:layout_width="122dp"
+                android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginTop="28dp"
                 android:text="@string/coinName"
                 android:textSize="22sp"
                 app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dolar_symbol"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="28dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="28dp"
+                android:text="10000000"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </LinearLayout>
@@ -87,21 +90,44 @@ android:layout_height="150dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="70dp"
-                android:text="TextView" />
+                android:text="@string/changeHours"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"/>
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/change24h"
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="70dp"
-                android:text="TextView" />
+                android:layout_marginStart="5dp"
+                android:text="@string/lorem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changeWeek"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="50dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/change7d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="@string/lorem" />
 
         </LinearLayout>
     </LinearLayout>
