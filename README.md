@@ -1,8 +1,8 @@
 <div align="center">
   
-  ![Title](https://www.tradecoinclub.com/assets/images/en_US/cryptocurrency.png)
-  ---
   
+  # Crtptocurrency Tracker
+  ---
   ![output app](art/output-app.gif)
   
 </div>
