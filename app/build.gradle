@@ -25,6 +25,7 @@ android {
 dependencies {
 
     def koinVersion = '1.0.0'
+    def lifecycleVersion = '1.1.1'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -41,6 +42,9 @@ dependencies {
     implementation "org.koin:koin-android:$koinVersion"
     implementation "org.koin:koin-android-viewmodel:$koinVersion"
     implementation "org.koin:koin-android-scope:$koinVersion"
+
+    implementation "android.arch.lifecycle:extensions:$lifecycleVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifecycleVersion"
 
     implementation "com.google.code.gson:gson:2.8.5"
 

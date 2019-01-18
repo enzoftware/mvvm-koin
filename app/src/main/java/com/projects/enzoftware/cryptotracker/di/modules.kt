@@ -6,6 +6,8 @@ import com.projects.enzoftware.cryptotracker.data.DataRepositoryFactory
 import com.projects.enzoftware.cryptotracker.data.LocalDataRepository
 import com.projects.enzoftware.cryptotracker.data.RemoteDataRepository
 import com.projects.enzoftware.cryptotracker.ui.CurrenciesAdapter
+import com.projects.enzoftware.cryptotracker.viewmodel.CurrencyViewModel
+import org.koin.android.viewmodel.ext.koin.viewModel
 import org.koin.dsl.module.module
 
 val applicationModule = module {
@@ -16,4 +18,6 @@ val applicationModule = module {
     factory<DataRepository>("remote") { RemoteDataRepository() }
 
     factory { DataRepositoryFactory(get("local"), get("remote")) }
+
+    viewModel { CurrencyViewModel(get()) }
 }

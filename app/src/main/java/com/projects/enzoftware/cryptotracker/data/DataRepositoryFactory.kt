@@ -7,7 +7,7 @@ class DataRepositoryFactory constructor(
     fun retriveRemoteSource(): DataRepository {
         return remoteDataRepository
     }
-    fun retriveLocalSource(): DataRepository {
+    fun retrieveLocalSource(): DataRepository {
         return localDataRepository
     }
 }
