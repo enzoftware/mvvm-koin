@@ -10,7 +10,7 @@ import com.projects.enzoftware.cryptotracker.model.Currency
 
 class CurrenciesAdapter : RecyclerView.Adapter<CurrenciesAdapter.ViewHolder>() {
 
-    private var currencies: List<Currency> = arrayListOf()
+    var currencies: List<Currency> = arrayListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent!!.context).inflate(R.layout.cardiew_coin_detail, parent, false)
