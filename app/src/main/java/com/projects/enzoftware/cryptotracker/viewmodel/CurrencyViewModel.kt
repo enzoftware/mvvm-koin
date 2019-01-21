@@ -6,7 +6,7 @@ import android.arch.lifecycle.ViewModel
 import com.projects.enzoftware.cryptotracker.data.DataRepositoryFactory
 import com.projects.enzoftware.cryptotracker.model.Currency
 
-class CurrencyViewModel constructor(private val dataRepositoryFactory: DataRepositoryFactory): ViewModel() {
+class CurrencyViewModel constructor(val dataRepositoryFactory: DataRepositoryFactory): ViewModel() {
 
     private val currencyLiveData = MutableLiveData<List<Currency>>()
 

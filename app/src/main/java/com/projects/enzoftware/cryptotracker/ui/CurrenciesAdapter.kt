@@ -10,24 +10,22 @@ import com.projects.enzoftware.cryptotracker.model.Currency
 
 class CurrenciesAdapter : RecyclerView.Adapter<CurrenciesAdapter.ViewHolder>() {
 
+
     var currencies: List<Currency> = arrayListOf()
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent!!.context).inflate(R.layout.cardiew_coin_detail, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.cardiew_coin_detail, parent, false)
         return ViewHolder(view)
     }
 
     override fun getItemCount(): Int = currencies.count()
 
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-        val currency = currencies[position]
-        holder!!.nameText.text = currency.name
-        holder.symbolText.text = currency.id.toString()
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.currencyView.setCurrency(currencies[position])
     }
 
 
     inner class  ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val nameText: TextView = view.findViewById(R.id.coinName)
-        val symbolText: TextView = view.findViewById(R.id.coinId)
+        val currencyView: CurrencyView = view.findViewById(R.id.view_currency_item)
     }
 }
