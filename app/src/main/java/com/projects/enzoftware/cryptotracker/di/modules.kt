@@ -13,10 +13,15 @@ import org.koin.dsl.module.module
 
 val applicationModule = module {
     single { Gson() }
-    factory { CurrenciesAdapter() }
+
     factory<DataRepository>("local") { LocalDataRepository(get()) }
     factory<DataRepository>("remote") { RemoteDataRepository() }
     factory { DataRepositoryFactory(get("local"), get("remote")) }
-    single { UrlHelper("http://www.coinmarketcap.com/currencies/") }
+    single { UrlHelper(getProperty("currency_api_base_url")) }
+
+}
+
+val browseModule = module("browse") {
+    factory { CurrenciesAdapter() }
     viewModel { CurrencyViewModel(get()) }
 }

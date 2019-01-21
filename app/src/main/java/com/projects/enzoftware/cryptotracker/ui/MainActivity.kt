@@ -8,6 +8,8 @@ import com.projects.enzoftware.cryptotracker.R
 import com.projects.enzoftware.cryptotracker.viewmodel.CurrencyViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
+import org.koin.android.scope.ext.android.bindScope
+import org.koin.android.scope.ext.android.getOrCreateScope
 import org.koin.android.viewmodel.ext.android.viewModel
 
 
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        bindScope(getOrCreateScope("browse"))
         setupCurrenciesRecycler()
         currenciesViewModel.observeCurrencies().observe(this, Observer { it ->
             it?.let { currenciesAdapter.currencies = it }
@@ -28,6 +31,7 @@ class MainActivity : AppCompatActivity() {
                 .bufferedReader().use { it.readText() }
         currenciesViewModel.retrieveCurrencies(currenciesJson)
     }
+
 
     private fun setupCurrenciesRecycler() {
         recyclerViewCoins.layoutManager = LinearLayoutManager(this)
