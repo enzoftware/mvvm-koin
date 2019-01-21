@@ -6,7 +6,8 @@ import android.arch.lifecycle.ViewModel
 import com.projects.enzoftware.cryptotracker.data.DataRepositoryFactory
 import com.projects.enzoftware.cryptotracker.model.Currency
 
-class CurrencyViewModel constructor(private val dataRepositoryFactory: DataRepositoryFactory): ViewModel() {
+class CurrencyViewModel constructor(val dataRepositoryFactory: DataRepositoryFactory,
+                                    val json: String): ViewModel() {
 
     private val currencyLiveData = MutableLiveData<List<Currency>>()
 
@@ -14,7 +15,7 @@ class CurrencyViewModel constructor(private val dataRepositoryFactory: DataRepos
         return currencyLiveData
     }
 
-    fun retrieveCurrencies(json: String) {
+    fun retrieveCurrencies() {
         val data = dataRepositoryFactory.retrieveLocalSource().getCurrencies(json)
         currencyLiveData.postValue(data)
     }

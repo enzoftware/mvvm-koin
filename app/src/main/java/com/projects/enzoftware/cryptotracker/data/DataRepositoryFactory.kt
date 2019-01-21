@@ -1,8 +1,8 @@
 package com.projects.enzoftware.cryptotracker.data
 
 class DataRepositoryFactory constructor(
-        private val localDataRepository: LocalDataRepository,
-        private val remoteDataRepository: RemoteDataRepository
+        private val localDataRepository: DataRepository,
+        private val remoteDataRepository: DataRepository
 ) {
     fun retriveRemoteSource(): DataRepository {
         return remoteDataRepository
