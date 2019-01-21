@@ -11,6 +11,6 @@ class KoinApplication: Application() {
         super.onCreate()
         startKoin(this, listOf(applicationModule, browseModule),
                 loadProperties = true, // TO READ THE koin.properties file located in assets
-                logger = TimberLogger)
+                logger = TimberLogger())
     }
 }
