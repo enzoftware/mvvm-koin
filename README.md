@@ -6,7 +6,7 @@
   
 </div>
 
-This is a sample Android application I developed in order to practice Android Architecture Components and MVVM architecture .
+This is a sample Android application I developed in order to practice Android Architecture Components and MVVM architecture. Track all the Cryptocurrency coins that trends on crypto market.
 
 
 ## Libraries used in this project
